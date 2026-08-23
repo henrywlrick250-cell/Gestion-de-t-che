@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de tâche</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <input type="text" id="champ" placeholder="Saisissez ici la tâche à ajouter">
+        <button id="btn_ajout"><i class="fa-solid fa-circle-plus"></i>Ajouter</button>
+        
+    </header>
+    <div id="contenu">
+        <div id="filter">
+            <i class="fa-solid fa-filter"></i>
+            <button id="toutes">Toutes <i class="fa-solid fa-chevron-down"></i></button>
+            <button id="en_cours"> En cours<i class="fa-solid fa-chevron-down"></i></button>
+            <button id="terminé">Terminé<i class="fa-solid fa-chevron-down"></i></button>
+            <button id="filter_pas_important">Pas important<i class="fa-solid fa-chevron-down"></i></button>
+            <button id="filter_moyen"> Moyen <i class="fa-solid fa-chevron-down"></i></button>
+            <button id="filter_urgent"> Urgent<i class="fa-solid fa-chevron-down"></i></button>
+        </div>
+           <div id="choix">
+        <span> Veuillez définir le niveau d'importance de votre tâche</span>
+        <span>
+            <label for="Ipas_important" >Pas important</label>
+            <input type="radio" name="importance" id="Ipas_important" value="pas_important">
+        </span>
+        <span>
+            <label for="Imoyen">Moyen</label>
+            <input type="radio" name="importance" id="Imoyen" value="moyen">
+        </span>
+        <span>
+            <label for="Iurgent">Urgent</label>
+            <input type="radio" name="importance" id="Iurgent" value="urgent">
+        </span>
+           </div>
+        <div id="content">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
