@@ -82,14 +82,14 @@ input.addEventListener('keydown', (e) => {
     toutes.addEventListener('click',function(){
         tasks=document.querySelectorAll('.tache');
         tasks.forEach(task => {
-            task.style.display='inline-block';
+            task.style.display='';
         })
     });
     en_cours.addEventListener('click',function(){
         tasks=document.querySelectorAll('.tache');
          tasks.forEach(task => {
             if(task.firstChild.classList.contains('not_done')){
-                task.style.display='inline-block';
+                task.style.display='';
             }
             else{
                 task.style.display='none'
@@ -100,7 +100,7 @@ input.addEventListener('keydown', (e) => {
          tasks=document.querySelectorAll('.tache');
          tasks.forEach(task => {
             if(task.firstChild.classList.contains('done')){
-                task.style.display='inline-block';
+                task.style.display='';
             }
             else{
                 task.style.display='none'
@@ -111,7 +111,7 @@ input.addEventListener('keydown', (e) => {
         tasks=document.querySelectorAll('.tache');
         tasks.forEach(task => {
             if(task.firstChild.classList.contains('pas_important')){
-                task.style.display='inline-block';
+                task.style.display='';
             }
             else{
                 task.style.display='none'
@@ -122,7 +122,7 @@ input.addEventListener('keydown', (e) => {
         tasks=document.querySelectorAll('.tache');
         tasks.forEach(task => {
             if(task.firstChild.classList.contains('moyen')){
-                task.style.display='inline-block';
+                task.style.display='';
             }
             else{
                 task.style.display='none'
@@ -133,7 +133,7 @@ input.addEventListener('keydown', (e) => {
         tasks=document.querySelectorAll('.tache');
         tasks.forEach(task => {
             if(task.firstChild.classList.contains('urgent')){
-                task.style.display='inline-block';
+                task.style.display='';
             }
             else{
                 task.style.display='none'
